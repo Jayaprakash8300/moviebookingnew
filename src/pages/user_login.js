@@ -15,7 +15,7 @@ function Userlogin() {
       alert("please enter email and password");
     } else {
       Axios.get(
-        "http://localhost:3001/api/retrieve/" + password
+        "https://backend-moviebooking.vercel.app/api/retrieve/" + password
       ).then(response => {
         try {
           localStorage.setItem("name", response.data[0].name);

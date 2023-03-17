@@ -17,7 +17,7 @@ function Adminlogin() {
       alert("please enter email and password");
     } else {
       Axios.get(
-        "http://localhost:3001/api/admin/" + password
+        "https://backend-moviebooking.vercel.app/api/admin/" + password
       ).then(response => {
         try {
           localStorage.setItem("name", response.data[0].name);

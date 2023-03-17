@@ -7,7 +7,7 @@ function Mybookings() {
   useEffect(() => {
     const email = localStorage.getItem("email");
     const mobile = localStorage.getItem("mobile");
-    Axios.get("http://localhost:3001/api/mybooking/", {
+    Axios.get("https://backend-moviebooking.vercel.app/api/mybooking/", {
       params: {
         email: email,
         mobile: mobile

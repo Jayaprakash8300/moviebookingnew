@@ -9,7 +9,7 @@ function Moviespage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/api/movielist").then(response => {
+    Axios.get("https://backend-moviebooking.vercel.app/api/movielist").then(response => {
       setmovielist(response.data);
     });
   }, []);

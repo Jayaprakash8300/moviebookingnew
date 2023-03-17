@@ -23,7 +23,7 @@ function Signup() {
     ) {
       alert("please fill all fields");
     } else {
-      Axios.post("http://localhost:3001/api/insert", {
+      Axios.post("https://backend-moviebooking.vercel.app/api/insert", {
         name: name,
         email: email,
         password: password,

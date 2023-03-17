@@ -29,7 +29,7 @@ function Movieupload() {
     ) {
       alert("please fill all fields");
     } else {
-      Axios.post("http://localhost:3001/api/movieupload", {
+      Axios.post("https://backend-moviebooking.vercel.app/api/movieupload", {
         movieimageurl: movieimageurl,
         movievideourl: movievideourl,
         moviename: moviename,

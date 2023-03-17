@@ -33,7 +33,7 @@ export const Seatselection = () => {
 
       document.getElementById("notification").innerHTML =
         "<p class='alert-message'style='margin-bottom:0px;background:yellow;'>Please Select your Seats NOW!</p>";
-      Axios.get("http://localhost:3001/api/ceatsbooked/", {
+      Axios.get("https://backend-moviebooking.vercel.app/api/ceatsbooked/", {
         params: {
           moviename: moviename,
           bookingdate: bookingdate

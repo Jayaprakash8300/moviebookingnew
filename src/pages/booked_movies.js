@@ -5,7 +5,7 @@ import Adminnavbar from "../navbar/admin_navbar";
 function Bookedmovies() {
   const [bookinglist, setbookinglist] = useState([]);
   useEffect(() => {
-    Axios.get("http://localhost:3001/api/bookedmovies").then(response => {
+    Axios.get("https://backend-moviebooking.vercel.app/api/bookedmovies").then(response => {
       setbookinglist(response.data);
       console.log(response.data);
     });
